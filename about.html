@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Animated  Portfolio Website</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<section class="Home">
+		<header>
+			<a href="#" class="logo"><span>D&B</span> Abogados</a>
+			<ul>
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="#">Accidentes</a></li>
+				<!-- <li><a href="instalaciones.html">Instalaciones</a></li> -->
+				<li><a href="contacto.html">Contacto</a></li>
+			</ul>
+		</header>
+		
+		<!-- <img src="colors.png" class="colors">
+		<img src="men.png" class="men"> -->
+		<ul class="sci">
+			<li><a href="https://wa.me/1559069107"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+			<li><a href="https://g.page/r/CZ_evVF-0R9SEB0/review"><ion-icon name="logo-google"></ion-icon></a></li>
+			<li><a href="https://www.instagram.com/dyb_abogados/?hl=es"><ion-icon name="logo-instagram"></ion-icon></a></li>
+		</ul>
+		<div class="dayNight">
+			<ion-icon name="moon-outline"></ion-icon>
+			<ion-icon name="sunny-outline"></ion-icon>
+		</div>
+        <div class="consultas">
+            <h2>¿Como actuar ante un accidente de tránsito?</h2>
+        <ul>
+            <li>Pedirle al otro conductor los datos de su licencia de conducir y su seguro</li>
+            <li>Darle al otro conductor los datos de tu licencia de conducir y del seguro de tu auto.</li>
+            <li>Llamar a una ambulancia o concurrir a centro de salud para que te revisen. Si interviene la policía, también tenés que darle los datos de tu licencia de conducir y del seguro del auto.</li>
+            <li>Del auto con el que chocaste: patente, marca y nombre de la empresa de seguro.</li>
+            <li>Del conductor: nombre, DNI, domicilio y teléfono.</li>
+            <li>Del asegurado, si no es la persona que maneja el auto al momento del accidente: nombre, DNI, domicilio y teléfono.</li>
+        </ul>
+    </div>
+	</section>
+	
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	<script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+	<script>
+		let typingText = new Typed("#text", {
+			strings : ["John","Designer","Coder","Youtuber"],
+			typeSpeed : 100,
+			backSpeed : 50,
+			backDelay : 1000,
+			loop : true,
+		})
+
+		let banner = document.querySelector('.Home');
+		let dayNight = document.querySelector('.dayNight');
+		dayNight.onclick = function(){
+			banner.classList.toggle('night');
+		}
+	</script>
+</body>
+</html>
